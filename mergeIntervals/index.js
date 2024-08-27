@@ -1,15 +1,4 @@
-const intervals = [
-  [2, 6],
-  [1, 3],
-  [8, 15],
-  [17, 18],
-];
-
 function mergeIntervals(intervals) {
-  if (intervals.length === 0) {
-    return [];
-  }
-
   intervals.sort((a, b) => a[0] - b[0]);
 
   const merged = [intervals[0]];
@@ -27,5 +16,11 @@ function mergeIntervals(intervals) {
   return merged;
 }
 
-const merged = mergeIntervals(intervals);
-console.log(merged);
+const intervals = [
+  [2, 6],
+  [1, 3],
+  [8, 15],
+  [17, 18],
+];
+const res = mergeIntervals(intervals);
+console.log(res);
