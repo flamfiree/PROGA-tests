@@ -13,4 +13,6 @@ function mergeSortedArrays(arr1, arr2) {
 const mas1 = [1, 2, 4, 6];
 const mas2 = [3, 5, 6];
 
+const res = mergeSortedArrays(mas1, mas2);
+
 console.log(res);
